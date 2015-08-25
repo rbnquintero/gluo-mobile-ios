@@ -1,52 +1,39 @@
 //
-//  ToDoListTableViewController.m
-//  ToDoList
+//  TableViewController.m
+//  ControllerTest
 //
-//  Created by Ruben Quintero on 8/11/15.
+//  Created by Ruben Quintero on 8/20/15.
 //  Copyright (c) 2015 Ruben Quintero. All rights reserved.
 //
 
-#import "ToDoListTableViewController.h"
-#import "ToDoItem.h"
-#import "AddToDoItemViewController.h"
+#import "TableViewController.h"
+#import "TestItem.h"
+#import "DetailViewController.h"
 
-@interface ToDoListTableViewController ()
+@interface TableViewController ()
 
-@property NSMutableArray *toDoItems;
+@property NSMutableArray *testList;
 
 @end
 
-@implementation ToDoListTableViewController
-
-- (IBAction)unwindToList:(UIStoryboardSegue *) segue {
-    AddToDoItemViewController *source = [segue sourceViewController];
-    ToDoItem *item = source.toDoItem;
-    if(item != nil) {
-        [self.toDoItems addObject:item];
-        [self.tableView reloadData];
-    }
-}
-
-// private method to initialize list
-- (void) loadInitialData {
-    ToDoItem *item1 = [[ToDoItem alloc] init];
-    item1.itemName = @"Buy milk";
-    [self.toDoItems addObject:item1];
-    ToDoItem *item2 = [[ToDoItem alloc] init];
-    item2.itemName = @"Buy eggs";
-    [self.toDoItems addObject:item2];
-    ToDoItem *item3 = [[ToDoItem alloc] init];
-    item3.itemName = @"Read a book";
-    [self.toDoItems addObject:item3];
-    ToDoItem *item4 = [[ToDoItem alloc] init];
-    item4.itemName = @"Build an iOS app";
-    [self.toDoItems addObject:item4];
-}
+@implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.toDoItems = [[NSMutableArray alloc] init];
-    [self loadInitialData];
+    
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self createTestList];
+}
+
+- (void)createTestList {
+    self.testList = [[NSMutableArray alloc] init];
+    [self.testList addObject:[TestItem initTestItem:@1 withName:@"Location" andSegue:@"embedFirst"]];
+    [self.testList addObject:[TestItem initTestItem:@2 withName:@"Map" andSegue:@"embedSecond"]];
+    //[self.testList addObject:[TestItem initTestItem:@3 withData:@"Other"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,26 +44,29 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
+    // Return the number of sections on list
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [self.toDoItems count];
+    return [self.testList count];
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
-    ToDoItem *toDoItem = [self.toDoItems objectAtIndex:indexPath.row];
-    cell.textLabel.text = toDoItem.itemName;
-    if (toDoItem.completed){
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    } else {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testIdentifier" forIndexPath:indexPath];
+    TestItem* test = [self.testList objectAtIndex:indexPath.row];
+    cell.textLabel.text = [test getTestName];
     return cell;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    TestItem *test = self.testList[indexPath.row];
+    NSLog(@"%@", test.getTestName);
+    UINavigationController *navcontroller = [segue destinationViewController];
+    DetailViewController *controller = (DetailViewController*) [navcontroller topViewController];
+    [controller setTestItem:test];
 }
 
 /*
@@ -122,14 +112,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    ToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
-    tappedItem.completed = !tappedItem.completed;
-    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
-}
 
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "SimpleCar.h"
 
 @interface ToDoListTests : XCTestCase
 
@@ -28,6 +29,34 @@
 - (void)testExample {
     // This is an example of a functional test case.
     XCTAssert(YES, @"Pass");
+    NSLog(@"Your message here");
+    printf("\n");
+    
+    int some = 123;
+    // int *someo = &some;
+    printf("Some %i %i", some, 123);
+    
+    NSString *testString;
+    testString = [[NSString alloc] init];
+    testString = @"Here's a test string in testString!";
+    NSLog(@"testString: %@", testString);
+    
+    testString = @"Here's another test string in testString!";
+    NSLog(@"testString: %@", testString);
+    
+    SimpleCar *myCar = [[SimpleCar alloc] init];
+    
+    NSNumber *newVin = [NSNumber numberWithInt:123];
+    
+    [myCar setVin:newVin];
+    [myCar setMake:@"Honda" andModel:@"Civic"];
+    
+    NSLog(@"The car is: %@ %@", [myCar make], [myCar model]);
+    NSLog(@"The vin is: %@", [myCar vin]);
+    
+    
+    printf("\n");
+    printf("\n");
 }
 
 - (void)testPerformanceExample {

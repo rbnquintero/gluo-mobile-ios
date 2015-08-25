@@ -9,14 +9,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ToDoList/ToDoListTableViewController.m"
-            timestampString = "461111817.866965"
+            filePath = "Tests/XYZPerson.m"
+            timestampString = "461780547.271454"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "-numberOfSectionsInTableView:"
-            landmarkType = "5">
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "@implementation XYZPerson"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ToDoListTests/ToDoListTests.m"
-            timestampString = "461269161.473346"
+            filePath = "Tests/XYZPerson.m"
+            timestampString = "461783711.990174"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "-testExample"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-setFirstName:andLastName:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
