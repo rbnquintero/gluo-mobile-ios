@@ -17,7 +17,11 @@
 		99A01D481B867E1E00E26286 /* ControllerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A01D471B867E1E00E26286 /* ControllerTestTests.m */; };
 		99A01D561B868C4D00E26286 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A01D551B868C4D00E26286 /* TableViewController.m */; };
 		99A01D5D1B868C9500E26286 /* TestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A01D5C1B868C9500E26286 /* TestItem.m */; };
+		99D466D71B9A37F400590045 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D466D61B9A37F400590045 /* AddressBookUI.framework */; };
+		99D466DB1B9A40C800590045 /* LocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D466DA1B9A40C800590045 /* LocationHandler.m */; };
 		99DB9AE11B8777B500054FB2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DB9AE01B8777B500054FB2 /* DetailViewController.m */; };
+		99E65A101B8F813600CEC502 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E65A0F1B8F813600CEC502 /* LocationViewController.m */; };
+		99E65A121B8F856700CEC502 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E65A111B8F856700CEC502 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +54,14 @@
 		99A01D551B868C4D00E26286 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		99A01D5B1B868C9500E26286 /* TestItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestItem.h; sourceTree = "<group>"; };
 		99A01D5C1B868C9500E26286 /* TestItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestItem.m; sourceTree = "<group>"; };
+		99D466D61B9A37F400590045 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		99D466D91B9A40C800590045 /* LocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHandler.h; sourceTree = "<group>"; };
+		99D466DA1B9A40C800590045 /* LocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHandler.m; sourceTree = "<group>"; };
 		99DB9ADF1B8777B500054FB2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		99DB9AE01B8777B500054FB2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		99E65A0E1B8F813600CEC502 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		99E65A0F1B8F813600CEC502 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		99E65A111B8F856700CEC502 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D466D71B9A37F400590045 /* AddressBookUI.framework in Frameworks */,
+				99E65A121B8F856700CEC502 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +87,8 @@
 		99A01D1F1B867E1E00E26286 = {
 			isa = PBXGroup;
 			children = (
+				99D466D61B9A37F400590045 /* AddressBookUI.framework */,
+				99E65A111B8F856700CEC502 /* CoreLocation.framework */,
 				99A01D2A1B867E1E00E26286 /* ControllerTest */,
 				99A01D441B867E1E00E26286 /* ControllerTestTests */,
 				99A01D291B867E1E00E26286 /* Products */,
@@ -93,6 +107,8 @@
 		99A01D2A1B867E1E00E26286 /* ControllerTest */ = {
 			isa = PBXGroup;
 			children = (
+				99D466D81B9A409900590045 /* LocationService */,
+				99E65A0D1B8F80CD00CEC502 /* TestControllers */,
 				99A01D5A1B868C7200E26286 /* VO */,
 				99A01D2F1B867E1E00E26286 /* AppDelegate.h */,
 				99A01D301B867E1E00E26286 /* AppDelegate.m */,
@@ -145,6 +161,24 @@
 				99A01D5C1B868C9500E26286 /* TestItem.m */,
 			);
 			name = VO;
+			sourceTree = "<group>";
+		};
+		99D466D81B9A409900590045 /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				99D466D91B9A40C800590045 /* LocationHandler.h */,
+				99D466DA1B9A40C800590045 /* LocationHandler.m */,
+			);
+			name = LocationService;
+			sourceTree = "<group>";
+		};
+		99E65A0D1B8F80CD00CEC502 /* TestControllers */ = {
+			isa = PBXGroup;
+			children = (
+				99E65A0E1B8F813600CEC502 /* LocationViewController.h */,
+				99E65A0F1B8F813600CEC502 /* LocationViewController.m */,
+			);
+			name = TestControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +284,11 @@
 				99DB9AE11B8777B500054FB2 /* DetailViewController.m in Sources */,
 				99A01D5D1B868C9500E26286 /* TestItem.m in Sources */,
 				998693831B8CC49500237402 /* ContainerViewController.m in Sources */,
+				99E65A101B8F813600CEC502 /* LocationViewController.m in Sources */,
 				99A01D311B867E1E00E26286 /* AppDelegate.m in Sources */,
 				99A01D561B868C4D00E26286 /* TableViewController.m in Sources */,
 				99A01D2E1B867E1E00E26286 /* main.m in Sources */,
+				99D466DB1B9A40C800590045 /* LocationHandler.m in Sources */,
 				998693861B8CD25200237402 /* EmptySegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

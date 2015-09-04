@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="1370" y="867"/>
         </scene>
-        <!--View Controller-->
+        <!--Location View Controller-->
         <scene sceneID="j6O-iE-4mA">
             <objects>
-                <viewController storyboardIdentifier="manualViewTwo" id="QcK-sO-mCF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="manualViewTwo" id="QcK-sO-mCF" customClass="LocationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yPx-BH-Oco"/>
                         <viewControllerLayoutGuide type="bottom" id="xMB-1i-xu7"/>
@@ -52,8 +52,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You´re in!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y1-0j-VGS">
-                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="latitudeLabel" text="You are in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y1-0j-VGS">
+                                <rect key="frame" x="242" y="20" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="longitudeLabel" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feO-Ay-v9B">
+                                <rect key="frame" x="242" y="49" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="precisionLabel" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKr-fN-8Fv">
+                                <rect key="frame" x="242" y="78" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="addressLabel" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azt-KP-a98">
+                                <rect key="frame" x="242" y="193" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -61,10 +79,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="7Y1-0j-VGS" secondAttribute="centerX" id="3fn-9W-a0C"/>
-                            <constraint firstAttribute="centerY" secondItem="7Y1-0j-VGS" secondAttribute="centerY" id="Hnf-Jj-DcO"/>
+                            <constraint firstAttribute="centerX" secondItem="feO-Ay-v9B" secondAttribute="centerX" id="0LR-Hi-l8O"/>
+                            <constraint firstAttribute="centerX" secondItem="GKr-fN-8Fv" secondAttribute="centerX" id="2j4-NS-s4x"/>
+                            <constraint firstItem="7Y1-0j-VGS" firstAttribute="top" secondItem="yPx-BH-Oco" secondAttribute="bottom" constant="20" id="7h9-Fm-n91"/>
+                            <constraint firstItem="feO-Ay-v9B" firstAttribute="top" secondItem="7Y1-0j-VGS" secondAttribute="bottom" constant="8" id="FqM-XT-mYM"/>
+                            <constraint firstAttribute="centerX" secondItem="7Y1-0j-VGS" secondAttribute="centerX" id="L4r-MO-zBO"/>
+                            <constraint firstAttribute="centerX" secondItem="azt-KP-a98" secondAttribute="centerX" id="r2R-aS-Fl0"/>
+                            <constraint firstItem="azt-KP-a98" firstAttribute="top" secondItem="GKr-fN-8Fv" secondAttribute="bottom" constant="94" id="vSH-fv-x7K"/>
+                            <constraint firstItem="GKr-fN-8Fv" firstAttribute="top" secondItem="feO-Ay-v9B" secondAttribute="bottom" constant="8" id="vyi-Sa-hT5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="azt-KP-a98" id="ipu-Cy-2bv"/>
+                        <outlet property="latitudeLabel" destination="7Y1-0j-VGS" id="8og-6x-vs5"/>
+                        <outlet property="longitudeLabel" destination="feO-Ay-v9B" id="vck-Nu-SRb"/>
+                        <outlet property="precisionLabel" destination="GKr-fN-8Fv" id="LZK-Q2-z7Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZr-P0-JPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,7 +183,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wmv-N9-rSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1370" y="118"/>
+            <point key="canvasLocation" x="1370" y="106"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sWQ-vz-p0f">
@@ -199,8 +229,8 @@
                     </view>
                     <toolbarItems/>
                     <connections>
-                        <segue destination="Rhp-3p-3a4" kind="custom" identifier="embedFirst" customClass="EmptySegue" id="Ny4-XU-fx1"/>
-                        <segue destination="QcK-sO-mCF" kind="custom" identifier="embedSecond" customClass="EmptySegue" id="XbT-eg-8rY"/>
+                        <segue destination="Rhp-3p-3a4" kind="custom" identifier="embedSecond" customClass="EmptySegue" id="Ny4-XU-fx1"/>
+                        <segue destination="QcK-sO-mCF" kind="custom" identifier="embedFirst" customClass="EmptySegue" id="XbT-eg-8rY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGI-ru-ARl" userLabel="First Responder" sceneMemberID="firstResponder"/>
