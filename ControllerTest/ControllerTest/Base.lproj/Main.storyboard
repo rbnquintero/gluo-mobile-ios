@@ -55,25 +55,25 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="latitudeLabel" text="You are in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y1-0j-VGS">
                                 <rect key="frame" x="242" y="20" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="longitudeLabel" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feO-Ay-v9B">
                                 <rect key="frame" x="242" y="49" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="precisionLabel" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKr-fN-8Fv">
                                 <rect key="frame" x="242" y="78" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="addressLabel" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azt-KP-a98">
                                 <rect key="frame" x="242" y="193" width="117" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="550" y="867"/>
         </scene>
-        <!--View Controller-->
+        <!--Web Service View Controller-->
         <scene sceneID="heB-KV-M9n">
             <objects>
-                <viewController storyboardIdentifier="manualViewOne" id="Rhp-3p-3a4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="manualViewOne" id="Rhp-3p-3a4" customClass="WebServiceViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qx6-0B-mrE"/>
                         <viewControllerLayoutGuide type="bottom" id="VDN-Xn-g9S"/>
@@ -128,19 +128,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Other view" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPa-lT-eqK">
-                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Convert Fahrenheit to Celsius" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ief-kV-h4S">
+                                <rect key="frame" x="178" y="20" width="244" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="32" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9o2-r3-Xbq">
+                                <rect key="frame" x="252" y="97" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7Y-Hm-Rbm">
+                                <rect key="frame" x="270" y="157" width="61" height="30"/>
+                                <state key="normal" title="Convert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertirGrados:" destination="Rhp-3p-3a4" eventType="touchUpInside" id="PR6-If-dch"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="convertedTempLabel" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCf-M2-xEe">
+                                <rect key="frame" x="279" y="218" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="yPa-lT-eqK" secondAttribute="centerX" id="DLK-6O-klQ"/>
-                            <constraint firstAttribute="centerY" secondItem="yPa-lT-eqK" secondAttribute="centerY" id="WOi-oW-TfF"/>
+                            <constraint firstItem="9o2-r3-Xbq" firstAttribute="top" secondItem="ief-kV-h4S" secondAttribute="bottom" constant="56" id="2Da-wE-nne"/>
+                            <constraint firstAttribute="centerX" secondItem="ief-kV-h4S" secondAttribute="centerX" id="Alh-BS-ldh"/>
+                            <constraint firstItem="eCf-M2-xEe" firstAttribute="top" secondItem="Q7Y-Hm-Rbm" secondAttribute="bottom" constant="30" id="AuI-jI-faz"/>
+                            <constraint firstAttribute="centerX" secondItem="eCf-M2-xEe" secondAttribute="centerX" id="Uu4-90-fYh"/>
+                            <constraint firstItem="Q7Y-Hm-Rbm" firstAttribute="top" secondItem="9o2-r3-Xbq" secondAttribute="bottom" constant="30" id="hcO-MK-6vb"/>
+                            <constraint firstAttribute="centerX" secondItem="Q7Y-Hm-Rbm" secondAttribute="centerX" id="r90-C7-eRJ"/>
+                            <constraint firstItem="ief-kV-h4S" firstAttribute="top" secondItem="Qx6-0B-mrE" secondAttribute="bottom" constant="20" id="vVJ-GM-j2M"/>
+                            <constraint firstAttribute="centerX" secondItem="9o2-r3-Xbq" secondAttribute="centerX" id="wUP-Hz-Bja"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fahrenheitField" destination="9o2-r3-Xbq" id="oZ6-h8-2p4"/>
+                        <outlet property="resultLabel" destination="eCf-M2-xEe" id="9yo-PV-bHK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQd-O0-sSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
