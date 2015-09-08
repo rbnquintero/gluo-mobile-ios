@@ -261,11 +261,64 @@
                     <connections>
                         <segue destination="Rhp-3p-3a4" kind="custom" identifier="embedSecond" customClass="EmptySegue" id="Ny4-XU-fx1"/>
                         <segue destination="QcK-sO-mCF" kind="custom" identifier="embedFirst" customClass="EmptySegue" id="XbT-eg-8rY"/>
+                        <segue destination="06K-sl-bpx" kind="custom" identifier="embedThird" customClass="EmptySegue" id="UeY-3o-dFA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGI-ru-ARl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1370" y="1571"/>
+        </scene>
+        <!--Service View Controller-->
+        <scene sceneID="euK-n6-bLN">
+            <objects>
+                <viewController id="06K-sl-bpx" customClass="RESTServiceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kvE-YV-xcB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ggn-Yd-bDZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c7M-5t-9MD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REST Service Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IO9-8f-6Hu">
+                                <rect key="frame" x="230" y="20" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49w-tX-FNF">
+                                <rect key="frame" x="285" y="76" width="30" height="30"/>
+                                <state key="normal" title="Test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testService:" destination="06K-sl-bpx" eventType="touchUpInside" id="aW8-IU-t0A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71Y-lY-GsY">
+                                <rect key="frame" x="279" y="148" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IO9-8f-6Hu" firstAttribute="top" secondItem="kvE-YV-xcB" secondAttribute="bottom" constant="20" id="1Tb-nk-ESV"/>
+                            <constraint firstAttribute="centerX" secondItem="71Y-lY-GsY" secondAttribute="centerX" id="ZwL-Br-lor"/>
+                            <constraint firstItem="71Y-lY-GsY" firstAttribute="top" secondItem="49w-tX-FNF" secondAttribute="bottom" constant="42" id="aqf-zP-xnr"/>
+                            <constraint firstAttribute="centerX" secondItem="49w-tX-FNF" secondAttribute="centerX" id="bUs-LA-C3w"/>
+                            <constraint firstAttribute="centerX" secondItem="IO9-8f-6Hu" secondAttribute="centerX" id="i3F-HC-y4c"/>
+                            <constraint firstItem="49w-tX-FNF" firstAttribute="top" secondItem="IO9-8f-6Hu" secondAttribute="bottom" constant="36" id="loL-pS-7dn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="responseLabel" destination="71Y-lY-GsY" id="bAm-WC-AkT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGY-Wa-1F1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2190" y="2403"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

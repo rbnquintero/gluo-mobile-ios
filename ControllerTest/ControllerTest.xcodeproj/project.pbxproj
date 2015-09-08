@@ -11,6 +11,8 @@
 		997000201B9E3AFF00F9B01B /* TempConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970001D1B9E3AFF00F9B01B /* TempConvert.m */; };
 		997000211B9E3AFF00F9B01B /* TempConvertProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970001F1B9E3AFF00F9B01B /* TempConvertProxy.m */; };
 		997000241B9E3B0900F9B01B /* TempConvert_Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 997000231B9E3B0900F9B01B /* TempConvert_Enums.m */; };
+		997000D91B9F487500F9B01B /* RESTServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 997000D81B9F487500F9B01B /* RESTServiceViewController.m */; };
+		997000DC1B9F4C7700F9B01B /* RESTService.m in Sources */ = {isa = PBXBuildFile; fileRef = 997000DB1B9F4C7700F9B01B /* RESTService.m */; };
 		9970FFEF1B9DF01D00F9B01B /* LocalTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970FFEB1B9DF01D00F9B01B /* LocalTime.m */; };
 		9970FFF01B9DF01D00F9B01B /* LocalTimeProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970FFED1B9DF01D00F9B01B /* LocalTimeProxy.m */; };
 		9970FFF61B9DF04200F9B01B /* LocalTime_Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970FFF51B9DF04200F9B01B /* LocalTime_Enums.m */; };
@@ -54,6 +56,10 @@
 		9970001F1B9E3AFF00F9B01B /* TempConvertProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempConvertProxy.m; sourceTree = "<group>"; };
 		997000221B9E3B0900F9B01B /* TempConvert_Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempConvert_Enums.h; sourceTree = "<group>"; };
 		997000231B9E3B0900F9B01B /* TempConvert_Enums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempConvert_Enums.m; sourceTree = "<group>"; };
+		997000D71B9F487500F9B01B /* RESTServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTServiceViewController.h; sourceTree = "<group>"; };
+		997000D81B9F487500F9B01B /* RESTServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTServiceViewController.m; sourceTree = "<group>"; };
+		997000DA1B9F4C7700F9B01B /* RESTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTService.h; sourceTree = "<group>"; };
+		997000DB1B9F4C7700F9B01B /* RESTService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTService.m; sourceTree = "<group>"; };
 		9970FFEA1B9DF01D00F9B01B /* LocalTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalTime.h; sourceTree = "<group>"; };
 		9970FFEB1B9DF01D00F9B01B /* LocalTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalTime.m; sourceTree = "<group>"; };
 		9970FFEC1B9DF01D00F9B01B /* LocalTimeProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalTimeProxy.h; sourceTree = "<group>"; };
@@ -124,6 +130,8 @@
 				99D466DA1B9A40C800590045 /* LocationHandler.m */,
 				997000171B9E392500F9B01B /* TemperatureService.h */,
 				997000181B9E392500F9B01B /* TemperatureService.m */,
+				997000DA1B9F4C7700F9B01B /* RESTService.h */,
+				997000DB1B9F4C7700F9B01B /* RESTService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -263,6 +271,8 @@
 				99FFAE851B9DDBB000471AFA /* WebServiceViewController.m */,
 				99E65A0E1B8F813600CEC502 /* LocationViewController.h */,
 				99E65A0F1B8F813600CEC502 /* LocationViewController.m */,
+				997000D71B9F487500F9B01B /* RESTServiceViewController.h */,
+				997000D81B9F487500F9B01B /* RESTServiceViewController.m */,
 			);
 			name = TestControllers;
 			sourceTree = "<group>";
@@ -367,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997000D91B9F487500F9B01B /* RESTServiceViewController.m in Sources */,
 				9970FFF61B9DF04200F9B01B /* LocalTime_Enums.m in Sources */,
 				99DB9AE11B8777B500054FB2 /* DetailViewController.m in Sources */,
 				997000241B9E3B0900F9B01B /* TempConvert_Enums.m in Sources */,
@@ -381,6 +392,7 @@
 				9970FFF01B9DF01D00F9B01B /* LocalTimeProxy.m in Sources */,
 				99A01D2E1B867E1E00E26286 /* main.m in Sources */,
 				9970FFEF1B9DF01D00F9B01B /* LocalTime.m in Sources */,
+				997000DC1B9F4C7700F9B01B /* RESTService.m in Sources */,
 				997000201B9E3AFF00F9B01B /* TempConvert.m in Sources */,
 				99D466DB1B9A40C800590045 /* LocationHandler.m in Sources */,
 				997000191B9E392500F9B01B /* TemperatureService.m in Sources */,
