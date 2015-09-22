@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.restService = [RESTService initializeWithURL:@"http://jsonplaceholder.typicode.com/posts" andDelegate:self];
+    self.restService = [RESTService initializeWithURL:@"http://rest-service.guides.spring.io/greeting" andDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning {
