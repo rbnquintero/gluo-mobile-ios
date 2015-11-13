@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "DBManager.h"
 
 @interface ControllerTestTests : XCTestCase
 
@@ -15,6 +16,11 @@
 
 @implementation ControllerTestTests
 
+- (void) test {
+    [[DBManager getSharedInstance] createDB];
+}
+
+/*
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -35,6 +41,6 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
-}
+}*/
 
 @end

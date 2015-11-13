@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99FC67231BA0F14500022C35 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 99FC67221BA0F14500022C35 /* libsqlite3.dylib */; };
+		99FC67271BA0F20400022C35 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99FC67261BA0F20400022C35 /* XCTest.framework */; };
+		D719DFBC18BE7D3E007A0D3E /* GB_CarsSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D719DFBB18BE7D3E007A0D3E /* GB_CarsSQLite.m */; };
+		D719DFC118BE84BC007A0D3E /* GB_CarTestData.m in Sources */ = {isa = PBXBuildFile; fileRef = D719DFC018BE84BC007A0D3E /* GB_CarTestData.m */; };
+		D719DFC418BE8A5F007A0D3E /* GB_CarInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D719DFC318BE8A5F007A0D3E /* GB_CarInfo.m */; };
+		D7314A5A19252FB000028A8E /* GB_Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = D7314A5919252FB000028A8E /* GB_Preferences.m */; };
+		D736FDDC191D833A00976B23 /* GB_DiagUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D736FDDB191D833A00976B23 /* GB_DiagUtil.m */; };
+		D767665718B95EA3008FBE84 /* Numberctl.xib in Resources */ = {isa = PBXBuildFile; fileRef = D767665618B95EA3008FBE84 /* Numberctl.xib */; };
+		D767665A18B95FB0008FBE84 /* GB_StepperCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = D767665918B95FB0008FBE84 /* GB_StepperCtl.m */; };
+		D79EBE9818B56E31007C7F83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79EBE9718B56E31007C7F83 /* Foundation.framework */; };
+		D79EBE9A18B56E31007C7F83 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79EBE9918B56E31007C7F83 /* CoreGraphics.framework */; };
+		D79EBE9C18B56E31007C7F83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79EBE9B18B56E31007C7F83 /* UIKit.framework */; };
+		D79EBEA218B56E31007C7F83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D79EBEA018B56E31007C7F83 /* InfoPlist.strings */; };
+		D79EBEA418B56E31007C7F83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EBEA318B56E31007C7F83 /* main.m */; };
+		D79EBEA818B56E31007C7F83 /* GBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EBEA718B56E31007C7F83 /* GBAppDelegate.m */; };
+		D79EBEAB18B56E31007C7F83 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79EBEA918B56E31007C7F83 /* Main_iPhone.storyboard */; };
+		D79EBEAE18B56E31007C7F83 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79EBEAC18B56E31007C7F83 /* Main_iPad.storyboard */; };
+		D79EBEB118B56E31007C7F83 /* GBRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EBEB018B56E31007C7F83 /* GBRecordViewController.m */; };
+		D79EBEB418B56E31007C7F83 /* GBRecordCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EBEB318B56E31007C7F83 /* GBRecordCreateViewController.m */; };
+		D79EBEB618B56E31007C7F83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79EBEB518B56E31007C7F83 /* Images.xcassets */; };
+		D79EBEBE18B56E31007C7F83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79EBE9718B56E31007C7F83 /* Foundation.framework */; };
+		D79EBEBF18B56E31007C7F83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79EBE9B18B56E31007C7F83 /* UIKit.framework */; };
+		D79EBEC718B56E31007C7F83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D79EBEC518B56E31007C7F83 /* InfoPlist.strings */; };
+		D79EBEC918B56E31007C7F83 /* DataStoreTesterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EBEC818B56E31007C7F83 /* DataStoreTesterTests.m */; };
+		D79EBEDD18B57EB3007C7F83 /* CarModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D79EBED918B57EB3007C7F83 /* CarModel.xcdatamodeld */; };
+		D79EBEE118B57F9E007C7F83 /* Manufacturer.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EBEE018B57F9E007C7F83 /* Manufacturer.m */; };
+		D79EBEE418B57F9E007C7F83 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EBEE318B57F9E007C7F83 /* Car.m */; };
+		D79EBEE818B58022007C7F83 /* CarDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EBEE718B58022007C7F83 /* CarDetails.m */; };
+		D79EBEEB18B58022007C7F83 /* CarType.m in Sources */ = {isa = PBXBuildFile; fileRef = D79EBEEA18B58022007C7F83 /* CarType.m */; };
+		D7EB17EF18BBD51B0015AE31 /* GB_RecordTestConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB17EE18BBD51B0015AE31 /* GB_RecordTestConfig.m */; };
+		D7EB17F218BC323D0015AE31 /* GBDataStoreTableSelecion.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB17F118BC323D0015AE31 /* GBDataStoreTableSelecion.m */; };
+		D7EB17F518BD77F70015AE31 /* GB_CarsCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB17F418BD77F70015AE31 /* GB_CarsCoreData.m */; };
+		D7EB17F718BD85F20015AE31 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EB17F618BD85F20015AE31 /* CoreData.framework */; };
+		D7EC8C8218C3F95300FF1618 /* GB_CarDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EC8C8118C3F95300FF1618 /* GB_CarDetailedViewController.m */; };
+		D7F36B9E18BF953E00FB5F2B /* GB_CarRecordTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F36B9D18BF953E00FB5F2B /* GB_CarRecordTableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D79EBEC018B56E31007C7F83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D79EBE8C18B56E31007C7F83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D79EBE9318B56E31007C7F83;
+			remoteInfo = DataStoreTester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99FC67221BA0F14500022C35 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		99FC67261BA0F20400022C35 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D719DFBA18BE7D3E007A0D3E /* GB_CarsSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GB_CarsSQLite.h; path = SQLiteClasses/GB_CarsSQLite.h; sourceTree = SOURCE_ROOT; };
+		D719DFBB18BE7D3E007A0D3E /* GB_CarsSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GB_CarsSQLite.m; path = SQLiteClasses/GB_CarsSQLite.m; sourceTree = SOURCE_ROOT; };
+		D719DFBE18BE81A4007A0D3E /* GB_CarDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GB_CarDataProtocol.h; path = CarData/GB_CarDataProtocol.h; sourceTree = "<group>"; };
+		D719DFBF18BE84BC007A0D3E /* GB_CarTestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GB_CarTestData.h; path = CarData/GB_CarTestData.h; sourceTree = "<group>"; };
+		D719DFC018BE84BC007A0D3E /* GB_CarTestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GB_CarTestData.m; path = CarData/GB_CarTestData.m; sourceTree = "<group>"; };
+		D719DFC218BE8A5F007A0D3E /* GB_CarInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GB_CarInfo.h; path = CarData/GB_CarInfo.h; sourceTree = "<group>"; };
+		D719DFC318BE8A5F007A0D3E /* GB_CarInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GB_CarInfo.m; path = CarData/GB_CarInfo.m; sourceTree = "<group>"; };
+		D7314A5819252FB000028A8E /* GB_Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB_Preferences.h; sourceTree = "<group>"; };
+		D7314A5919252FB000028A8E /* GB_Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GB_Preferences.m; sourceTree = "<group>"; };
+		D736FDDA191D833A00976B23 /* GB_DiagUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB_DiagUtil.h; sourceTree = "<group>"; };
+		D736FDDB191D833A00976B23 /* GB_DiagUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GB_DiagUtil.m; sourceTree = "<group>"; };
+		D767665618B95EA3008FBE84 /* Numberctl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Numberctl.xib; sourceTree = "<group>"; };
+		D767665818B95FB0008FBE84 /* GB_StepperCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB_StepperCtl.h; sourceTree = "<group>"; };
+		D767665918B95FB0008FBE84 /* GB_StepperCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GB_StepperCtl.m; sourceTree = "<group>"; };
+		D79EBE9418B56E31007C7F83 /* DataStoreTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStoreTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79EBE9718B56E31007C7F83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D79EBE9918B56E31007C7F83 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D79EBE9B18B56E31007C7F83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D79EBE9F18B56E31007C7F83 /* DataStoreTester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataStoreTester-Info.plist"; sourceTree = "<group>"; };
+		D79EBEA118B56E31007C7F83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D79EBEA318B56E31007C7F83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D79EBEA518B56E31007C7F83 /* DataStoreTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataStoreTester-Prefix.pch"; sourceTree = "<group>"; };
+		D79EBEA618B56E31007C7F83 /* GBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBAppDelegate.h; sourceTree = "<group>"; };
+		D79EBEA718B56E31007C7F83 /* GBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBAppDelegate.m; sourceTree = "<group>"; };
+		D79EBEAA18B56E31007C7F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D79EBEAD18B56E31007C7F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D79EBEAF18B56E31007C7F83 /* GBRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBRecordViewController.h; sourceTree = "<group>"; };
+		D79EBEB018B56E31007C7F83 /* GBRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBRecordViewController.m; sourceTree = "<group>"; };
+		D79EBEB218B56E31007C7F83 /* GBRecordCreateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBRecordCreateViewController.h; sourceTree = "<group>"; };
+		D79EBEB318B56E31007C7F83 /* GBRecordCreateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBRecordCreateViewController.m; sourceTree = "<group>"; };
+		D79EBEB518B56E31007C7F83 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D79EBEBB18B56E31007C7F83 /* DataStoreTesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStoreTesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79EBEC418B56E31007C7F83 /* DataStoreTesterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataStoreTesterTests-Info.plist"; sourceTree = "<group>"; };
+		D79EBEC618B56E31007C7F83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D79EBEC818B56E31007C7F83 /* DataStoreTesterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStoreTesterTests.m; sourceTree = "<group>"; };
+		D79EBEDA18B57EB3007C7F83 /* CarModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarModel.xcdatamodel; sourceTree = "<group>"; };
+		D79EBEDF18B57F9E007C7F83 /* Manufacturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Manufacturer.h; path = CoreDataClasses/Manufacturer.h; sourceTree = "<group>"; };
+		D79EBEE018B57F9E007C7F83 /* Manufacturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Manufacturer.m; path = CoreDataClasses/Manufacturer.m; sourceTree = "<group>"; };
+		D79EBEE218B57F9E007C7F83 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = CoreDataClasses/Car.h; sourceTree = "<group>"; };
+		D79EBEE318B57F9E007C7F83 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Car.m; path = CoreDataClasses/Car.m; sourceTree = "<group>"; };
+		D79EBEE618B58022007C7F83 /* CarDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarDetails.h; path = CoreDataClasses/CarDetails.h; sourceTree = "<group>"; };
+		D79EBEE718B58022007C7F83 /* CarDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarDetails.m; path = CoreDataClasses/CarDetails.m; sourceTree = "<group>"; };
+		D79EBEE918B58022007C7F83 /* CarType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarType.h; path = CoreDataClasses/CarType.h; sourceTree = "<group>"; };
+		D79EBEEA18B58022007C7F83 /* CarType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarType.m; path = CoreDataClasses/CarType.m; sourceTree = "<group>"; };
+		D7EB17ED18BBD51B0015AE31 /* GB_RecordTestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB_RecordTestConfig.h; sourceTree = "<group>"; };
+		D7EB17EE18BBD51B0015AE31 /* GB_RecordTestConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GB_RecordTestConfig.m; sourceTree = "<group>"; };
+		D7EB17F018BC323D0015AE31 /* GBDataStoreTableSelecion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBDataStoreTableSelecion.h; sourceTree = "<group>"; };
+		D7EB17F118BC323D0015AE31 /* GBDataStoreTableSelecion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBDataStoreTableSelecion.m; sourceTree = "<group>"; };
+		D7EB17F318BD77F70015AE31 /* GB_CarsCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GB_CarsCoreData.h; path = CoreDataClasses/GB_CarsCoreData.h; sourceTree = "<group>"; };
+		D7EB17F418BD77F70015AE31 /* GB_CarsCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GB_CarsCoreData.m; path = CoreDataClasses/GB_CarsCoreData.m; sourceTree = "<group>"; };
+		D7EB17F618BD85F20015AE31 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D7EC8C8018C3F95300FF1618 /* GB_CarDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB_CarDetailedViewController.h; sourceTree = "<group>"; };
+		D7EC8C8118C3F95300FF1618 /* GB_CarDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GB_CarDetailedViewController.m; sourceTree = "<group>"; };
+		D7F36B9C18BF953E00FB5F2B /* GB_CarRecordTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GB_CarRecordTableView.h; sourceTree = "<group>"; };
+		D7F36B9D18BF953E00FB5F2B /* GB_CarRecordTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GB_CarRecordTableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D79EBE9118B56E31007C7F83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99FC67271BA0F20400022C35 /* XCTest.framework in Frameworks */,
+				99FC67231BA0F14500022C35 /* libsqlite3.dylib in Frameworks */,
+				D7EB17F718BD85F20015AE31 /* CoreData.framework in Frameworks */,
+				D79EBE9A18B56E31007C7F83 /* CoreGraphics.framework in Frameworks */,
+				D79EBE9C18B56E31007C7F83 /* UIKit.framework in Frameworks */,
+				D79EBE9818B56E31007C7F83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D79EBEB818B56E31007C7F83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79EBEBF18B56E31007C7F83 /* UIKit.framework in Frameworks */,
+				D79EBEBE18B56E31007C7F83 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D719DFB918BE7CFC007A0D3E /* SQLiteClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D719DFBA18BE7D3E007A0D3E /* GB_CarsSQLite.h */,
+				D719DFBB18BE7D3E007A0D3E /* GB_CarsSQLite.m */,
+			);
+			name = SQLiteClasses;
+			sourceTree = "<group>";
+		};
+		D719DFBD18BE8166007A0D3E /* CarData */ = {
+			isa = PBXGroup;
+			children = (
+				D719DFBE18BE81A4007A0D3E /* GB_CarDataProtocol.h */,
+				D719DFBF18BE84BC007A0D3E /* GB_CarTestData.h */,
+				D719DFC018BE84BC007A0D3E /* GB_CarTestData.m */,
+				D719DFC218BE8A5F007A0D3E /* GB_CarInfo.h */,
+				D719DFC318BE8A5F007A0D3E /* GB_CarInfo.m */,
+			);
+			name = CarData;
+			sourceTree = "<group>";
+		};
+		D79EBE8B18B56E31007C7F83 = {
+			isa = PBXGroup;
+			children = (
+				D719DFBD18BE8166007A0D3E /* CarData */,
+				D719DFB918BE7CFC007A0D3E /* SQLiteClasses */,
+				D79EBEE518B57FF0007C7F83 /* CoreDataClasses */,
+				D79EBED218B57635007C7F83 /* CoreDataModel */,
+				D79EBE9D18B56E31007C7F83 /* DataStoreTester */,
+				D79EBEC218B56E31007C7F83 /* DataStoreTesterTests */,
+				D79EBE9618B56E31007C7F83 /* Frameworks */,
+				D79EBE9518B56E31007C7F83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D79EBE9518B56E31007C7F83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D79EBE9418B56E31007C7F83 /* DataStoreTester.app */,
+				D79EBEBB18B56E31007C7F83 /* DataStoreTesterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D79EBE9618B56E31007C7F83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99FC67261BA0F20400022C35 /* XCTest.framework */,
+				99FC67221BA0F14500022C35 /* libsqlite3.dylib */,
+				D7EB17F618BD85F20015AE31 /* CoreData.framework */,
+				D79EBE9718B56E31007C7F83 /* Foundation.framework */,
+				D79EBE9918B56E31007C7F83 /* CoreGraphics.framework */,
+				D79EBE9B18B56E31007C7F83 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D79EBE9D18B56E31007C7F83 /* DataStoreTester */ = {
+			isa = PBXGroup;
+			children = (
+				D7EC8C8018C3F95300FF1618 /* GB_CarDetailedViewController.h */,
+				D7EC8C8118C3F95300FF1618 /* GB_CarDetailedViewController.m */,
+				D7F36B9C18BF953E00FB5F2B /* GB_CarRecordTableView.h */,
+				D7F36B9D18BF953E00FB5F2B /* GB_CarRecordTableView.m */,
+				D7EB17F018BC323D0015AE31 /* GBDataStoreTableSelecion.h */,
+				D7EB17F118BC323D0015AE31 /* GBDataStoreTableSelecion.m */,
+				D7EB17ED18BBD51B0015AE31 /* GB_RecordTestConfig.h */,
+				D7EB17EE18BBD51B0015AE31 /* GB_RecordTestConfig.m */,
+				D79EBEA618B56E31007C7F83 /* GBAppDelegate.h */,
+				D79EBEA718B56E31007C7F83 /* GBAppDelegate.m */,
+				D79EBEA918B56E31007C7F83 /* Main_iPhone.storyboard */,
+				D767665618B95EA3008FBE84 /* Numberctl.xib */,
+				D767665818B95FB0008FBE84 /* GB_StepperCtl.h */,
+				D767665918B95FB0008FBE84 /* GB_StepperCtl.m */,
+				D79EBEAC18B56E31007C7F83 /* Main_iPad.storyboard */,
+				D79EBEAF18B56E31007C7F83 /* GBRecordViewController.h */,
+				D79EBEB018B56E31007C7F83 /* GBRecordViewController.m */,
+				D79EBEB218B56E31007C7F83 /* GBRecordCreateViewController.h */,
+				D79EBEB318B56E31007C7F83 /* GBRecordCreateViewController.m */,
+				D736FDDA191D833A00976B23 /* GB_DiagUtil.h */,
+				D736FDDB191D833A00976B23 /* GB_DiagUtil.m */,
+				D7314A5819252FB000028A8E /* GB_Preferences.h */,
+				D7314A5919252FB000028A8E /* GB_Preferences.m */,
+				D79EBEB518B56E31007C7F83 /* Images.xcassets */,
+				D79EBE9E18B56E31007C7F83 /* Supporting Files */,
+			);
+			path = DataStoreTester;
+			sourceTree = "<group>";
+		};
+		D79EBE9E18B56E31007C7F83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D79EBE9F18B56E31007C7F83 /* DataStoreTester-Info.plist */,
+				D79EBEA018B56E31007C7F83 /* InfoPlist.strings */,
+				D79EBEA318B56E31007C7F83 /* main.m */,
+				D79EBEA518B56E31007C7F83 /* DataStoreTester-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D79EBEC218B56E31007C7F83 /* DataStoreTesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D79EBEC818B56E31007C7F83 /* DataStoreTesterTests.m */,
+				D79EBEC318B56E31007C7F83 /* Supporting Files */,
+			);
+			path = DataStoreTesterTests;
+			sourceTree = "<group>";
+		};
+		D79EBEC318B56E31007C7F83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D79EBEC418B56E31007C7F83 /* DataStoreTesterTests-Info.plist */,
+				D79EBEC518B56E31007C7F83 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D79EBED218B57635007C7F83 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D79EBED918B57EB3007C7F83 /* CarModel.xcdatamodeld */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		D79EBEE518B57FF0007C7F83 /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D79EBEE218B57F9E007C7F83 /* Car.h */,
+				D79EBEE318B57F9E007C7F83 /* Car.m */,
+				D79EBEDF18B57F9E007C7F83 /* Manufacturer.h */,
+				D79EBEE018B57F9E007C7F83 /* Manufacturer.m */,
+				D79EBEE918B58022007C7F83 /* CarType.h */,
+				D79EBEEA18B58022007C7F83 /* CarType.m */,
+				D79EBEE618B58022007C7F83 /* CarDetails.h */,
+				D79EBEE718B58022007C7F83 /* CarDetails.m */,
+				D7EB17F318BD77F70015AE31 /* GB_CarsCoreData.h */,
+				D7EB17F418BD77F70015AE31 /* GB_CarsCoreData.m */,
+			);
+			name = CoreDataClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D79EBE9318B56E31007C7F83 /* DataStoreTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D79EBECC18B56E31007C7F83 /* Build configuration list for PBXNativeTarget "DataStoreTester" */;
+			buildPhases = (
+				D79EBE9018B56E31007C7F83 /* Sources */,
+				D79EBE9118B56E31007C7F83 /* Frameworks */,
+				D79EBE9218B56E31007C7F83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataStoreTester;
+			productName = DataStoreTester;
+			productReference = D79EBE9418B56E31007C7F83 /* DataStoreTester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D79EBEBA18B56E31007C7F83 /* DataStoreTesterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D79EBECF18B56E31007C7F83 /* Build configuration list for PBXNativeTarget "DataStoreTesterTests" */;
+			buildPhases = (
+				D79EBEB718B56E31007C7F83 /* Sources */,
+				D79EBEB818B56E31007C7F83 /* Frameworks */,
+				D79EBEB918B56E31007C7F83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D79EBEC118B56E31007C7F83 /* PBXTargetDependency */,
+			);
+			name = DataStoreTesterTests;
+			productName = DataStoreTesterTests;
+			productReference = D79EBEBB18B56E31007C7F83 /* DataStoreTesterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D79EBE8C18B56E31007C7F83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Dean Gereaux";
+				TargetAttributes = {
+					D79EBE9318B56E31007C7F83 = {
+						DevelopmentTeam = Z5678EY52E;
+					};
+					D79EBEBA18B56E31007C7F83 = {
+						TestTargetID = D79EBE9318B56E31007C7F83;
+					};
+				};
+			};
+			buildConfigurationList = D79EBE8F18B56E31007C7F83 /* Build configuration list for PBXProject "DataStoreTester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D79EBE8B18B56E31007C7F83;
+			productRefGroup = D79EBE9518B56E31007C7F83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D79EBE9318B56E31007C7F83 /* DataStoreTester */,
+				D79EBEBA18B56E31007C7F83 /* DataStoreTesterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D79EBE9218B56E31007C7F83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79EBEAE18B56E31007C7F83 /* Main_iPad.storyboard in Resources */,
+				D79EBEB618B56E31007C7F83 /* Images.xcassets in Resources */,
+				D79EBEAB18B56E31007C7F83 /* Main_iPhone.storyboard in Resources */,
+				D79EBEA218B56E31007C7F83 /* InfoPlist.strings in Resources */,
+				D767665718B95EA3008FBE84 /* Numberctl.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D79EBEB918B56E31007C7F83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79EBEC718B56E31007C7F83 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D79EBE9018B56E31007C7F83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79EBEA418B56E31007C7F83 /* main.m in Sources */,
+				D79EBEDD18B57EB3007C7F83 /* CarModel.xcdatamodeld in Sources */,
+				D767665A18B95FB0008FBE84 /* GB_StepperCtl.m in Sources */,
+				D79EBEEB18B58022007C7F83 /* CarType.m in Sources */,
+				D7EB17F518BD77F70015AE31 /* GB_CarsCoreData.m in Sources */,
+				D7EB17F218BC323D0015AE31 /* GBDataStoreTableSelecion.m in Sources */,
+				D79EBEA818B56E31007C7F83 /* GBAppDelegate.m in Sources */,
+				D7F36B9E18BF953E00FB5F2B /* GB_CarRecordTableView.m in Sources */,
+				D79EBEB118B56E31007C7F83 /* GBRecordViewController.m in Sources */,
+				D79EBEB418B56E31007C7F83 /* GBRecordCreateViewController.m in Sources */,
+				D79EBEE418B57F9E007C7F83 /* Car.m in Sources */,
+				D719DFC118BE84BC007A0D3E /* GB_CarTestData.m in Sources */,
+				D79EBEE818B58022007C7F83 /* CarDetails.m in Sources */,
+				D719DFBC18BE7D3E007A0D3E /* GB_CarsSQLite.m in Sources */,
+				D719DFC418BE8A5F007A0D3E /* GB_CarInfo.m in Sources */,
+				D79EBEE118B57F9E007C7F83 /* Manufacturer.m in Sources */,
+				D7EC8C8218C3F95300FF1618 /* GB_CarDetailedViewController.m in Sources */,
+				D7EB17EF18BBD51B0015AE31 /* GB_RecordTestConfig.m in Sources */,
+				D7314A5A19252FB000028A8E /* GB_Preferences.m in Sources */,
+				D736FDDC191D833A00976B23 /* GB_DiagUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D79EBEB718B56E31007C7F83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79EBEC918B56E31007C7F83 /* DataStoreTesterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D79EBEC118B56E31007C7F83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D79EBE9318B56E31007C7F83 /* DataStoreTester */;
+			targetProxy = D79EBEC018B56E31007C7F83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D79EBEA018B56E31007C7F83 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D79EBEA118B56E31007C7F83 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D79EBEA918B56E31007C7F83 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D79EBEAA18B56E31007C7F83 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D79EBEAC18B56E31007C7F83 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D79EBEAD18B56E31007C7F83 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D79EBEC518B56E31007C7F83 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D79EBEC618B56E31007C7F83 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D79EBECA18B56E31007C7F83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D79EBECB18B56E31007C7F83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D79EBECD18B56E31007C7F83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataStoreTester/DataStoreTester-Prefix.pch";
+				INFOPLIST_FILE = "DataStoreTester/DataStoreTester-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D79EBECE18B56E31007C7F83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataStoreTester/DataStoreTester-Prefix.pch";
+				INFOPLIST_FILE = "DataStoreTester/DataStoreTester-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D79EBED018B56E31007C7F83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DataStoreTester.app/DataStoreTester";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataStoreTester/DataStoreTester-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DataStoreTesterTests/DataStoreTesterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D79EBED118B56E31007C7F83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DataStoreTester.app/DataStoreTester";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataStoreTester/DataStoreTester-Prefix.pch";
+				INFOPLIST_FILE = "DataStoreTesterTests/DataStoreTesterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D79EBE8F18B56E31007C7F83 /* Build configuration list for PBXProject "DataStoreTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79EBECA18B56E31007C7F83 /* Debug */,
+				D79EBECB18B56E31007C7F83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D79EBECC18B56E31007C7F83 /* Build configuration list for PBXNativeTarget "DataStoreTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79EBECD18B56E31007C7F83 /* Debug */,
+				D79EBECE18B56E31007C7F83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D79EBECF18B56E31007C7F83 /* Build configuration list for PBXNativeTarget "DataStoreTesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79EBED018B56E31007C7F83 /* Debug */,
+				D79EBED118B56E31007C7F83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D79EBED918B57EB3007C7F83 /* CarModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D79EBEDA18B57EB3007C7F83 /* CarModel.xcdatamodel */,
+			);
+			currentVersion = D79EBEDA18B57EB3007C7F83 /* CarModel.xcdatamodel */;
+			name = CarModel.xcdatamodeld;
+			path = CoreDataModels/CarModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D79EBE8C18B56E31007C7F83 /* Project object */;
+}

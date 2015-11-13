@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9930F5181BA0927B004D355C /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9930F5171BA0927B004D355C /* DBManager.m */; };
+		99434E441BA1EDAF00F98AD5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99434E431BA1EDAF00F98AD5 /* CoreData.framework */; };
+		996BBCC31BB2FF1A00FB2403 /* CoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCC11BB2FF1A00FB2403 /* CoreDataTest.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		996BBCC61BB302A500FB2403 /* CoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCC51BB302A500FB2403 /* CoreDataService.m */; settings = {ASSET_TAGS = (); }; };
+		996BBCC91BB31CD400FB2403 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCC81BB31CD400FB2403 /* CoreDataViewController.m */; settings = {ASSET_TAGS = (); }; };
+		996BBCCC1BB31E1C00FB2403 /* AAAEmployeeMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCCB1BB31E1C00FB2403 /* AAAEmployeeMO.m */; settings = {ASSET_TAGS = (); }; };
 		997000191B9E392500F9B01B /* TemperatureService.m in Sources */ = {isa = PBXBuildFile; fileRef = 997000181B9E392500F9B01B /* TemperatureService.m */; };
 		997000201B9E3AFF00F9B01B /* TempConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970001D1B9E3AFF00F9B01B /* TempConvert.m */; };
 		997000211B9E3AFF00F9B01B /* TempConvertProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970001F1B9E3AFF00F9B01B /* TempConvertProxy.m */; };
@@ -18,7 +24,6 @@
 		9970FFF61B9DF04200F9B01B /* LocalTime_Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970FFF51B9DF04200F9B01B /* LocalTime_Enums.m */; };
 		9970FFFA1B9E075700F9B01B /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970FFF91B9E075700F9B01B /* XPathQuery.m */; };
 		9970FFFD1B9E076D00F9B01B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970FFFC1B9E076D00F9B01B /* NSData+Base64.m */; };
-		9970FFFF1B9E2E7D00F9B01B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9970FFFE1B9E2E7D00F9B01B /* libxml2.dylib */; };
 		998693831B8CC49500237402 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998693821B8CC49500237402 /* ContainerViewController.m */; };
 		998693861B8CD25200237402 /* EmptySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 998693851B8CD25200237402 /* EmptySegue.m */; };
 		99A01D2E1B867E1E00E26286 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A01D2D1B867E1E00E26286 /* main.m */; };
@@ -29,6 +34,8 @@
 		99A01D481B867E1E00E26286 /* ControllerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A01D471B867E1E00E26286 /* ControllerTestTests.m */; };
 		99A01D561B868C4D00E26286 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A01D551B868C4D00E26286 /* TableViewController.m */; };
 		99A01D5D1B868C9500E26286 /* TestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A01D5C1B868C9500E26286 /* TestItem.m */; };
+		99A3BFE61BA0EEB000C99B92 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A3BFE41BA0EEB000C99B92 /* libsqlite3.dylib */; };
+		99A3BFE71BA0EEB000C99B92 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A3BFE51BA0EEB000C99B92 /* libxml2.2.dylib */; };
 		99D466D71B9A37F400590045 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D466D61B9A37F400590045 /* AddressBookUI.framework */; };
 		99D466DB1B9A40C800590045 /* LocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D466DA1B9A40C800590045 /* LocationHandler.m */; };
 		99DB9AE11B8777B500054FB2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DB9AE01B8777B500054FB2 /* DetailViewController.m */; };
@@ -48,6 +55,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9930F5161BA0927B004D355C /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		9930F5171BA0927B004D355C /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		99434E431BA1EDAF00F98AD5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		996BBCC21BB2FF1A00FB2403 /* CoreDataTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTest.xcdatamodel; sourceTree = "<group>"; };
+		996BBCC41BB302A500FB2403 /* CoreDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataService.h; sourceTree = "<group>"; };
+		996BBCC51BB302A500FB2403 /* CoreDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataService.m; sourceTree = "<group>"; };
+		996BBCC71BB31CD400FB2403 /* CoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
+		996BBCC81BB31CD400FB2403 /* CoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
+		996BBCCA1BB31E1C00FB2403 /* AAAEmployeeMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAAEmployeeMO.h; sourceTree = "<group>"; };
+		996BBCCB1BB31E1C00FB2403 /* AAAEmployeeMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAAEmployeeMO.m; sourceTree = "<group>"; };
 		997000171B9E392500F9B01B /* TemperatureService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureService.h; sourceTree = "<group>"; };
 		997000181B9E392500F9B01B /* TemperatureService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureService.m; sourceTree = "<group>"; };
 		9970001C1B9E3AFF00F9B01B /* TempConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempConvert.h; sourceTree = "<group>"; };
@@ -70,7 +87,6 @@
 		9970FFF91B9E075700F9B01B /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		9970FFFB1B9E076D00F9B01B /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		9970FFFC1B9E076D00F9B01B /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		9970FFFE1B9E2E7D00F9B01B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		998693811B8CC49500237402 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
 		998693821B8CC49500237402 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		998693841B8CD25200237402 /* EmptySegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptySegue.h; sourceTree = "<group>"; };
@@ -90,6 +106,8 @@
 		99A01D551B868C4D00E26286 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		99A01D5B1B868C9500E26286 /* TestItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestItem.h; sourceTree = "<group>"; };
 		99A01D5C1B868C9500E26286 /* TestItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestItem.m; sourceTree = "<group>"; };
+		99A3BFE41BA0EEB000C99B92 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		99A3BFE51BA0EEB000C99B92 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = ../../../../../../usr/lib/libxml2.2.dylib; sourceTree = "<group>"; };
 		99D466D61B9A37F400590045 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		99D466D91B9A40C800590045 /* LocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHandler.h; sourceTree = "<group>"; };
 		99D466DA1B9A40C800590045 /* LocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHandler.m; sourceTree = "<group>"; };
@@ -107,7 +125,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9970FFFF1B9E2E7D00F9B01B /* libxml2.dylib in Frameworks */,
+				99434E441BA1EDAF00F98AD5 /* CoreData.framework in Frameworks */,
+				99A3BFE61BA0EEB000C99B92 /* libsqlite3.dylib in Frameworks */,
+				99A3BFE71BA0EEB000C99B92 /* libxml2.2.dylib in Frameworks */,
 				99D466D71B9A37F400590045 /* AddressBookUI.framework in Frameworks */,
 				99E65A121B8F856700CEC502 /* CoreLocation.framework in Frameworks */,
 			);
@@ -123,15 +143,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		996BBCC01BB2FEFC00FB2403 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				996BBCC11BB2FF1A00FB2403 /* CoreDataTest.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		997000161B9E38C700F9B01B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9930F5161BA0927B004D355C /* DBManager.h */,
+				9930F5171BA0927B004D355C /* DBManager.m */,
 				99D466D91B9A40C800590045 /* LocationHandler.h */,
 				99D466DA1B9A40C800590045 /* LocationHandler.m */,
 				997000171B9E392500F9B01B /* TemperatureService.h */,
 				997000181B9E392500F9B01B /* TemperatureService.m */,
 				997000DA1B9F4C7700F9B01B /* RESTService.h */,
 				997000DB1B9F4C7700F9B01B /* RESTService.m */,
+				996BBCC41BB302A500FB2403 /* CoreDataService.h */,
+				996BBCC51BB302A500FB2403 /* CoreDataService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -186,7 +218,9 @@
 		99A01D1F1B867E1E00E26286 = {
 			isa = PBXGroup;
 			children = (
-				9970FFFE1B9E2E7D00F9B01B /* libxml2.dylib */,
+				99434E431BA1EDAF00F98AD5 /* CoreData.framework */,
+				99A3BFE41BA0EEB000C99B92 /* libsqlite3.dylib */,
+				99A3BFE51BA0EEB000C99B92 /* libxml2.2.dylib */,
 				99D466D61B9A37F400590045 /* AddressBookUI.framework */,
 				99E65A111B8F856700CEC502 /* CoreLocation.framework */,
 				99A01D2A1B867E1E00E26286 /* ControllerTest */,
@@ -207,6 +241,7 @@
 		99A01D2A1B867E1E00E26286 /* ControllerTest */ = {
 			isa = PBXGroup;
 			children = (
+				996BBCC01BB2FEFC00FB2403 /* CoreData */,
 				997000161B9E38C700F9B01B /* Services */,
 				9970FFDF1B9DE6BF00F9B01B /* GeneratedSources */,
 				99E65A0D1B8F80CD00CEC502 /* TestControllers */,
@@ -260,6 +295,8 @@
 			children = (
 				99A01D5B1B868C9500E26286 /* TestItem.h */,
 				99A01D5C1B868C9500E26286 /* TestItem.m */,
+				996BBCCA1BB31E1C00FB2403 /* AAAEmployeeMO.h */,
+				996BBCCB1BB31E1C00FB2403 /* AAAEmployeeMO.m */,
 			);
 			name = VO;
 			sourceTree = "<group>";
@@ -273,6 +310,8 @@
 				99E65A0F1B8F813600CEC502 /* LocationViewController.m */,
 				997000D71B9F487500F9B01B /* RESTServiceViewController.h */,
 				997000D81B9F487500F9B01B /* RESTServiceViewController.m */,
+				996BBCC71BB31CD400FB2403 /* CoreDataViewController.h */,
+				996BBCC81BB31CD400FB2403 /* CoreDataViewController.m */,
 			);
 			name = TestControllers;
 			sourceTree = "<group>";
@@ -380,10 +419,14 @@
 				997000D91B9F487500F9B01B /* RESTServiceViewController.m in Sources */,
 				9970FFF61B9DF04200F9B01B /* LocalTime_Enums.m in Sources */,
 				99DB9AE11B8777B500054FB2 /* DetailViewController.m in Sources */,
+				996BBCCC1BB31E1C00FB2403 /* AAAEmployeeMO.m in Sources */,
 				997000241B9E3B0900F9B01B /* TempConvert_Enums.m in Sources */,
+				996BBCC31BB2FF1A00FB2403 /* CoreDataTest.xcdatamodeld in Sources */,
 				9970FFFD1B9E076D00F9B01B /* NSData+Base64.m in Sources */,
 				99FFAE861B9DDBB000471AFA /* WebServiceViewController.m in Sources */,
 				99A01D5D1B868C9500E26286 /* TestItem.m in Sources */,
+				996BBCC91BB31CD400FB2403 /* CoreDataViewController.m in Sources */,
+				9930F5181BA0927B004D355C /* DBManager.m in Sources */,
 				998693831B8CC49500237402 /* ContainerViewController.m in Sources */,
 				99E65A101B8F813600CEC502 /* LocationViewController.m in Sources */,
 				99A01D311B867E1E00E26286 /* AppDelegate.m in Sources */,
@@ -391,6 +434,7 @@
 				9970FFFA1B9E075700F9B01B /* XPathQuery.m in Sources */,
 				9970FFF01B9DF01D00F9B01B /* LocalTimeProxy.m in Sources */,
 				99A01D2E1B867E1E00E26286 /* main.m in Sources */,
+				996BBCC61BB302A500FB2403 /* CoreDataService.m in Sources */,
 				9970FFEF1B9DF01D00F9B01B /* LocalTime.m in Sources */,
 				997000DC1B9F4C7700F9B01B /* RESTService.m in Sources */,
 				997000201B9E3AFF00F9B01B /* TempConvert.m in Sources */,
@@ -616,6 +660,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		996BBCC11BB2FF1A00FB2403 /* CoreDataTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				996BBCC21BB2FF1A00FB2403 /* CoreDataTest.xcdatamodel */,
+			);
+			currentVersion = 996BBCC21BB2FF1A00FB2403 /* CoreDataTest.xcdatamodel */;
+			path = CoreDataTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 99A01D201B867E1E00E26286 /* Project object */;
 }
