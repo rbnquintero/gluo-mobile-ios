@@ -1,0 +1,26 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-console"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "gluo-plugin-cmcontent": {
+        "source": {
+            "type": "local",
+            "path": "/Users/rbnquintero/stuff/git/gluo-mobile-ios/Phonegap/plugins/cm-content"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

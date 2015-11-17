@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Pruebas Gluo</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <style>
+            .hide {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="page" id="home">
+            <div data-role="header">
+                <h1>Pruebas Gluo</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div id="deviceready" class="blink">
+                    <p class="event listening">Connecting to Device</p>
+                    <p class="event received hide">Device is Ready</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#testb">Test 2 - SOAP Service </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Start of second page -->
+        <div data-role="page" id="testb">
+            <div data-role="header">
+                <a href="#home" class="ui-btn-left ui-btn ui-btn-icon-left ui-btn-inline ui-corner-all ui-mini">Back</a>
+                <h1>Primer test</h1>
+            </div>
+            
+            <div role="main" class="ui-content">
+                <p>Este test convierte grados de temperatura invocando un servicio SOAP</p>
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <input type="radio" name="gradostipo" id="celsius" value="c" checked="checked">
+                    <label for="celsius">Celsius</label>
+                    <input type="radio" name="gradostipo" id="fahrenheit" value="f">
+                    <label for="fahrenheit">Fahrenheit</label>
+                </fieldset>
+                <input type="number" name="grados" pattern="[0-9]*" id="grados" value="0"/>
+                <a href="#" onclick="convertirGrados();" class="ui-btn ui-btn-inline">Convertir!</a>
+                
+                <h3 id="respuestaGrados"></h3>
+            </div>
+            
+        </div><!-- /page -->
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="cm-content.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

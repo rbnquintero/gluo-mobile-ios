@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="gluo-plugin-cmcontent"
+        version="1.0.0">
+
+  <name>CMContent</name>
+  <description>A Cordova custom plugin that gets info from a CM server</description>
+
+  <js-module src="www/cm-content.js" name="CMContent">
+    <clobbers target="CMContent" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="CMContent">
+        <param name="ios-package" value="CMContent" />
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/test/test/CMContent.h" />
+    <source-file src="src/ios/test/test/CMContent.m" />
+    <header-file src="src/ios/test/test/NSData+Base64.h" />
+    <source-file src="src/ios/test/test/NSData+Base64.m" />
+    <header-file src="src/ios/test/test/TempConvert_Enums.h" />
+    <source-file src="src/ios/test/test/TempConvert_Enums.m" />
+    <header-file src="src/ios/test/test/TempConvert.h" />
+    <source-file src="src/ios/test/test/TempConvert.m" />
+    <header-file src="src/ios/test/test/TempConvertProxy.h" />
+    <source-file src="src/ios/test/test/TempConvertProxy.m" />
+    <header-file src="src/ios/test/test/TemperatureService.h" />
+    <source-file src="src/ios/test/test/TemperatureService.m" />
+    <header-file src="src/ios/test/test/XPathQuery.h" />
+    <source-file src="src/ios/test/test/XPathQuery.m" />
+  </platform>
+
+</plugin>

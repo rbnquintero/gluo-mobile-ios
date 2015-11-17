@@ -1,0 +1,36 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CMContent\"><param name=\"ios-package\" value=\"CMContent\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.gluo.tests"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.gluo.tests"
+        },
+        "gluo-plugin-cmcontent": {
+            "PACKAGE_NAME": "com.gluo.tests"
+        }
+    },
+    "dependent_plugins": {}
+}
