@@ -11,8 +11,17 @@
                         {
                             "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CMContent\"><param name=\"android-package\" value=\"CMContent\" /></feature>",
+                            "count": 1
                         }
                     ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": []
                 }
             }
         }

@@ -17,10 +17,6 @@
     <feature name="Console">
         <param name="ios-package" value="CDVLogger" />
     </feature>
-    <feature name="CMContent">
-        <param name="ios-package" value="CMContent" />
-        <param name="onload" value="true" />
-    </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <name>gluo-tests</name>
@@ -92,4 +88,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <feature name="CMContent">
+        <param name="ios-package" value="CMContent" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>

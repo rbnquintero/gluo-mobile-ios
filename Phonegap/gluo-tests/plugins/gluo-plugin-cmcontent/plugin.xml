@@ -34,4 +34,17 @@
     <source-file src="src/ios/test/test/XPathQuery.m" />
   </platform>
 
+  <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CMContent" >
+                <param name="android-package" value="CMContent"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/CMContent.java" target-dir="src/" />
+        <source-file src="src/android/IWsdl2CodeEvents.java" target-dir="src/" />
+        <source-file src="src/android/TempConvert.java" target-dir="src/" />
+        <source-file src="src/android/WS_Enums.java" target-dir="src/" />
+    </platform>
+
 </plugin>

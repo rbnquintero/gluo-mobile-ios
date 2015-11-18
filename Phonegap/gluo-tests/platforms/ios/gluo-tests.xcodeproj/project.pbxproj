@@ -41,13 +41,13 @@
 		9934F3F11BFBA7DB00AAA0BB /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9934F3F01BFBA7DB00AAA0BB /* libxml2.2.dylib */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F503A64C8F0848C4AAD1EDBD /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F69582451D646C8B34EBDAF /* CDVLogger.m */; };
-		100D9C61CDFE4796BF0F2DCF /* CMContent.m in Sources */ = {isa = PBXBuildFile; fileRef = A5952CA975374C5296EF4D4A /* CMContent.m */; };
-		51A95D77C3464BA3B4ECF496 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8BBD90EA7B4EA88433CC95 /* NSData+Base64.m */; };
-		9AD5B1806E59413FA3F3E91E /* TempConvert_Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3F210661BE4BA5A122226F /* TempConvert_Enums.m */; };
-		9F5270F1970F4724A28AA429 /* TempConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E3ED8C82E4C0EA3BE23DE /* TempConvert.m */; };
-		45B4814C73944D3EAB82D790 /* TempConvertProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5CA12FE4DD648309F5EF73C /* TempConvertProxy.m */; };
-		E881080763B44423B5E95434 /* TemperatureService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8F9C7894424A21ADEF0078 /* TemperatureService.m */; };
-		659C9E24C41541439FA8C590 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E54F64283B4EB39ED70B5F /* XPathQuery.m */; };
+		01299B32273F4CD889619DBA /* CMContent.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0A5096FD54331953E3AF8 /* CMContent.m */; };
+		92AAD454ECA246CAB4A59F9E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BC041AF07E4CD4A0373A03 /* NSData+Base64.m */; };
+		1E15FDC3144349E0A229175C /* TempConvert_Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA891805AA542CD840683AD /* TempConvert_Enums.m */; };
+		FCE52B68146D407D938DF28E /* TempConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 6823D1973C4249F38F5C4383 /* TempConvert.m */; };
+		7D5286661CF94B26A547689A /* TempConvertProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A5887804A14C6A805278CF /* TempConvertProxy.m */; };
+		CF6EFB7AB77E4913B833065C /* TemperatureService.m in Sources */ = {isa = PBXBuildFile; fileRef = 662D8F95CAA743568F6EAF69 /* TemperatureService.m */; };
+		62A540A805394304BF5437F5 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D734B5CD9E4F759FDB1E06 /* XPathQuery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,20 +114,20 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "gluo-tests/config.xml"; sourceTree = "<group>"; };
-		A5952CA975374C5296EF4D4A /* CMContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CMContent.m"; path = "gluo-plugin-cmcontent/CMContent.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		0A8BBD90EA7B4EA88433CC95 /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "gluo-plugin-cmcontent/NSData+Base64.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		7E3F210661BE4BA5A122226F /* TempConvert_Enums.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TempConvert_Enums.m"; path = "gluo-plugin-cmcontent/TempConvert_Enums.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		8D4E3ED8C82E4C0EA3BE23DE /* TempConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TempConvert.m"; path = "gluo-plugin-cmcontent/TempConvert.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		D5CA12FE4DD648309F5EF73C /* TempConvertProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TempConvertProxy.m"; path = "gluo-plugin-cmcontent/TempConvertProxy.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		2B8F9C7894424A21ADEF0078 /* TemperatureService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TemperatureService.m"; path = "gluo-plugin-cmcontent/TemperatureService.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		03E54F64283B4EB39ED70B5F /* XPathQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "XPathQuery.m"; path = "gluo-plugin-cmcontent/XPathQuery.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		CEF76C3A64A74825902339CE /* CMContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CMContent.h"; path = "gluo-plugin-cmcontent/CMContent.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		E52333B932DC4E75A4A1D604 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "gluo-plugin-cmcontent/NSData+Base64.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		7C0CD77BA1624241A43D627D /* TempConvert_Enums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TempConvert_Enums.h"; path = "gluo-plugin-cmcontent/TempConvert_Enums.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		09D1D37000784AC89C9D452A /* TempConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TempConvert.h"; path = "gluo-plugin-cmcontent/TempConvert.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		34FDEAC33C404A9C817F8173 /* TempConvertProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TempConvertProxy.h"; path = "gluo-plugin-cmcontent/TempConvertProxy.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		95B710113B204E8C96C77B07 /* TemperatureService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TemperatureService.h"; path = "gluo-plugin-cmcontent/TemperatureService.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		35678908795A49308D6FEC36 /* XPathQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "XPathQuery.h"; path = "gluo-plugin-cmcontent/XPathQuery.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A8E0A5096FD54331953E3AF8 /* CMContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CMContent.m"; path = "gluo-plugin-cmcontent/CMContent.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		62BC041AF07E4CD4A0373A03 /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "gluo-plugin-cmcontent/NSData+Base64.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		2CA891805AA542CD840683AD /* TempConvert_Enums.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TempConvert_Enums.m"; path = "gluo-plugin-cmcontent/TempConvert_Enums.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		6823D1973C4249F38F5C4383 /* TempConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TempConvert.m"; path = "gluo-plugin-cmcontent/TempConvert.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		46A5887804A14C6A805278CF /* TempConvertProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TempConvertProxy.m"; path = "gluo-plugin-cmcontent/TempConvertProxy.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		662D8F95CAA743568F6EAF69 /* TemperatureService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TemperatureService.m"; path = "gluo-plugin-cmcontent/TemperatureService.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A8D734B5CD9E4F759FDB1E06 /* XPathQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "XPathQuery.m"; path = "gluo-plugin-cmcontent/XPathQuery.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		BAFB9C7DFCEE4C3AB035304D /* CMContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CMContent.h"; path = "gluo-plugin-cmcontent/CMContent.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		5A9C58A6A713473A8F7E7BEA /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "gluo-plugin-cmcontent/NSData+Base64.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		CBA35CA1BA414F2A84EB34AA /* TempConvert_Enums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TempConvert_Enums.h"; path = "gluo-plugin-cmcontent/TempConvert_Enums.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		746F23E3151E406D9F4D4B6D /* TempConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TempConvert.h"; path = "gluo-plugin-cmcontent/TempConvert.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		D773CA6248E14D2E88060A52 /* TempConvertProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TempConvertProxy.h"; path = "gluo-plugin-cmcontent/TempConvertProxy.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		7B3BDE81741746D38233660D /* TemperatureService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TemperatureService.h"; path = "gluo-plugin-cmcontent/TemperatureService.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		E5C84CF38D7646CFB54BB2DD /* XPathQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "XPathQuery.h"; path = "gluo-plugin-cmcontent/XPathQuery.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,20 +230,20 @@
 			children = (
 				2F69582451D646C8B34EBDAF /* CDVLogger.m */,
 				1F514353B5644445AF94CD2A /* CDVLogger.h */,
-				A5952CA975374C5296EF4D4A /* CMContent.m */,
-				0A8BBD90EA7B4EA88433CC95 /* NSData+Base64.m */,
-				7E3F210661BE4BA5A122226F /* TempConvert_Enums.m */,
-				8D4E3ED8C82E4C0EA3BE23DE /* TempConvert.m */,
-				D5CA12FE4DD648309F5EF73C /* TempConvertProxy.m */,
-				2B8F9C7894424A21ADEF0078 /* TemperatureService.m */,
-				03E54F64283B4EB39ED70B5F /* XPathQuery.m */,
-				CEF76C3A64A74825902339CE /* CMContent.h */,
-				E52333B932DC4E75A4A1D604 /* NSData+Base64.h */,
-				7C0CD77BA1624241A43D627D /* TempConvert_Enums.h */,
-				09D1D37000784AC89C9D452A /* TempConvert.h */,
-				34FDEAC33C404A9C817F8173 /* TempConvertProxy.h */,
-				95B710113B204E8C96C77B07 /* TemperatureService.h */,
-				35678908795A49308D6FEC36 /* XPathQuery.h */,
+				A8E0A5096FD54331953E3AF8 /* CMContent.m */,
+				62BC041AF07E4CD4A0373A03 /* NSData+Base64.m */,
+				2CA891805AA542CD840683AD /* TempConvert_Enums.m */,
+				6823D1973C4249F38F5C4383 /* TempConvert.m */,
+				46A5887804A14C6A805278CF /* TempConvertProxy.m */,
+				662D8F95CAA743568F6EAF69 /* TemperatureService.m */,
+				A8D734B5CD9E4F759FDB1E06 /* XPathQuery.m */,
+				BAFB9C7DFCEE4C3AB035304D /* CMContent.h */,
+				5A9C58A6A713473A8F7E7BEA /* NSData+Base64.h */,
+				CBA35CA1BA414F2A84EB34AA /* TempConvert_Enums.h */,
+				746F23E3151E406D9F4D4B6D /* TempConvert.h */,
+				D773CA6248E14D2E88060A52 /* TempConvertProxy.h */,
+				7B3BDE81741746D38233660D /* TemperatureService.h */,
+				E5C84CF38D7646CFB54BB2DD /* XPathQuery.h */,
 			);
 			name = Plugins;
 			path = "gluo-tests/Plugins";
@@ -429,13 +429,13 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				F503A64C8F0848C4AAD1EDBD /* CDVLogger.m in Sources */,
-				100D9C61CDFE4796BF0F2DCF /* CMContent.m in Sources */,
-				51A95D77C3464BA3B4ECF496 /* NSData+Base64.m in Sources */,
-				9AD5B1806E59413FA3F3E91E /* TempConvert_Enums.m in Sources */,
-				9F5270F1970F4724A28AA429 /* TempConvert.m in Sources */,
-				45B4814C73944D3EAB82D790 /* TempConvertProxy.m in Sources */,
-				E881080763B44423B5E95434 /* TemperatureService.m in Sources */,
-				659C9E24C41541439FA8C590 /* XPathQuery.m in Sources */,
+				01299B32273F4CD889619DBA /* CMContent.m in Sources */,
+				92AAD454ECA246CAB4A59F9E /* NSData+Base64.m in Sources */,
+				1E15FDC3144349E0A229175C /* TempConvert_Enums.m in Sources */,
+				FCE52B68146D407D938DF28E /* TempConvert.m in Sources */,
+				7D5286661CF94B26A547689A /* TempConvertProxy.m in Sources */,
+				CF6EFB7AB77E4913B833065C /* TemperatureService.m in Sources */,
+				62A540A805394304BF5437F5 /* XPathQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

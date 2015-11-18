@@ -26,19 +26,61 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title>Pruebas Gluo</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <style>
+            .hide {
+                display: none;
+            }
+        </style>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div data-role="page" id="home">
+            <div data-role="header">
+                <h1>Pruebas Gluo</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <div id="deviceready" class="blink">
+                    <p class="event listening">Connecting to Device</p>
+                    <p class="event received hide">Device is Ready</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#testb">Test 2 - SOAP Service </a>
+                    </li>
+                </ul>
             </div>
         </div>
+        
+        <!-- Start of second page -->
+        <div data-role="page" id="testb">
+            <div data-role="header">
+                <a href="#home" class="ui-btn-left ui-btn ui-btn-icon-left ui-btn-inline ui-corner-all ui-mini">Back</a>
+                <h1>Primer test</h1>
+            </div>
+            
+            <div role="main" class="ui-content">
+                <p>Este test convierte grados de temperatura invocando un servicio SOAP</p>
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <input type="radio" name="gradostipo" id="celsius" value="c" checked="checked">
+                    <label for="celsius">Celsius</label>
+                    <input type="radio" name="gradostipo" id="fahrenheit" value="f">
+                    <label for="fahrenheit">Fahrenheit</label>
+                </fieldset>
+                <input type="number" name="grados" pattern="[0-9]*" id="grados" value="0"/>
+                <a href="#" onclick="convertirGrados();" class="ui-btn ui-btn-inline">Convertir!</a>
+                
+                <h3 id="respuestaGrados"></h3>
+            </div>
+            
+        </div><!-- /page -->
+        
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="cm-content.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
