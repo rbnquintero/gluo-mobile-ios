@@ -35,6 +35,7 @@
     [self.testList addObject:[TestItem initTestItem:@2 withName:@"SOAP Service" andSegue:@"embedSecond"]];
     [self.testList addObject:[TestItem initTestItem:@3 withName:@"REST Service" andSegue:@"embedThird"]];
     [self.testList addObject:[TestItem initTestItem:@4 withName:@"Core Data Service" andSegue:@"embedFourth"]];
+    [self.testList addObject:[TestItem initTestItem:@5 withName:@"Localization" andSegue:@"embedFifth"]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,7 +7,6 @@
 //
 
 #import "CoreDataService.h"
-#import "AAAEmployeeMO.h"
 
 @implementation CoreDataService
 
@@ -16,6 +15,7 @@
     if(!self) return nil;
     
     [self initializeCoreData];
+    [self saveContext];
     
     return self;
 }
@@ -44,15 +44,19 @@
         NSPersistentStore *store = [psc addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error];
         NSAssert(store != nil, @"Error initializing PSC: %@\n%@", [error localizedDescription], [error userInfo]);
     });
-    
-    //[self saveNew];
 }
 
 - (void) saveNew: (NSString *) firstName :(NSString *) lastName {
-    AAAEmployeeMO *employee = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:[self managedObjectContext]];
+    AAAEmployeeMO *employee = [NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:[self managedObjectContext]];
     
-    [employee setFirstName:@"Ruben"];
-    [employee setLastName:@"Quintero"];
+    [employee setFirstName:firstName];
+    [employee setLastName:lastName];
+    
+    NSDateFormatter *mmddccyy = [[NSDateFormatter alloc] init];
+    mmddccyy.timeStyle = NSDateFormatterNoStyle;
+    mmddccyy.dateFormat = @"MM/dd/yyyy";
+    NSDate *date = [mmddccyy dateFromString:@"12/11/2015"];
+    [employee setStartDate:date];
     
     NSError *error = nil;
     if([[self managedObjectContext] save:&error] == NO) {
@@ -61,12 +65,26 @@
 }
 
 - (void) fetchAllPersons {
+    [self.delegate showPersonas:[self fetchAll]];
+}
+
+- (NSArray*) fetchAll {
     NSManagedObjectContext *moc = [self managedObjectContext];
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Person"];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Employee"];
     
-    //  Optional predicate
-    // NSString *firstName = @"Ruben";
-    // [request setPredicate:[NSPredicate predicateWithFormat:@"firstName == %@", firstName]];
+    NSError *error = nil;
+    NSArray *results = [moc executeFetchRequest:request error:&error];
+    if(!results) {
+        NSLog(@"Error fetching Employee objects: %@\n%@", [error localizedDescription], [error userInfo]);
+        abort();
+    }
+    return results;
+}
+
+- (void) fetchOnePerson:(NSString*) firstName {
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Employee"];
+    [request setPredicate:[NSPredicate predicateWithFormat:@"firstName == %@", firstName]];
     
     NSError *error = nil;
     NSArray *results = [moc executeFetchRequest:request error:&error];
@@ -75,6 +93,20 @@
         abort();
     }
     [self.delegate showPersonas:results];
+}
+
+- (NSArray*) deleteOnePerson:(AAAEmployeeMO*) employee {
+    NSManagedObjectContext *moc = [self managedObjectContext];
+    [moc deleteObject:employee];
+    [self saveContext];
+    return [self fetchAll];
+}
+
+-(void) saveContext {
+    NSError *error = nil;
+    if ([[self managedObjectContext] save:&error] == NO) {
+        NSAssert(NO, @"Error saving context: %@\n%@", [error localizedDescription], [error userInfo]);
+    }
 }
 
 @end

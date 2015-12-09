@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "2Sb-E5-321"; */
+"2Sb-E5-321.text" = "Nombre";
+
+/* Class = "UIButton"; normalTitle = "Test"; ObjectID = "49w-tX-FNF"; */
+"49w-tX-FNF.normalTitle" = "Test";
+
+/* Class = "UILabel"; text = "  This is a localization test. Using the button bellow, you can change the language to be used in this screen."; ObjectID = "4Yh-c1-xKd"; */
+"4Yh-c1-xKd.text" = "  Este es un test de localización. Usando el botón de abajo, puedes cambiar el lenguaje de la aplicación.";
+
+/* Class = "UINavigationItem"; title = "Pruebas Gluo"; ObjectID = "6di-4D-W7Z"; */
+"6di-4D-W7Z.title" = "Pruebas Gluo";
+
+/* Class = "UILabel"; text = "You are in"; ObjectID = "7Y1-0j-VGS"; */
+"7Y1-0j-VGS.text" = "You are in";
+
+/* Class = "UILabel"; text = "Apellido"; ObjectID = "8T9-hz-utZ"; */
+"8T9-hz-utZ.text" = "Apellido";
+
+/* Class = "UITextField"; text = "32"; ObjectID = "9o2-r3-Xbq"; */
+"9o2-r3-Xbq.text" = "32";
+
+/* Class = "UILabel"; text = "Localization Test"; ObjectID = "Bb9-YS-IeG"; */
+"Bb9-YS-IeG.text" = "Prueba de localización";
+
+/* Class = "UILabel"; text = "Test"; ObjectID = "GKr-fN-8Fv"; */
+"GKr-fN-8Fv.text" = "Test";
+
+/* Class = "UILabel"; text = "REST Service Test"; ObjectID = "IO9-8f-6Hu"; */
+"IO9-8f-6Hu.text" = "REST Service Test";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "J3k-j0-9Ib"; */
+"J3k-j0-9Ib.placeholder" = "Nombre";
+
+/* Class = "UINavigationItem"; title = "Detail"; ObjectID = "Mhh-HE-bqk"; */
+"Mhh-HE-bqk.title" = "Detail";
+
+/* Class = "UILabel"; text = "Core Data Test"; ObjectID = "O2S-ny-dQu"; */
+"O2S-ny-dQu.text" = "Core Data Test";
+
+/* Class = "UIButton"; normalTitle = "Convert"; ObjectID = "Q7Y-Hm-Rbm"; */
+"Q7Y-Hm-Rbm.normalTitle" = "Convert";
+
+/* Class = "UIButton"; normalTitle = "Crear registro"; ObjectID = "Tvz-WZ-Z4v"; */
+"Tvz-WZ-Z4v.normalTitle" = "Crear registro";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "azt-KP-a98"; */
+"azt-KP-a98.text" = "Address";
+
+/* Class = "UILabel"; text = "Test"; ObjectID = "euH-Ym-xhD"; */
+"euH-Ym-xhD.text" = "Test";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "feO-Ay-v9B"; */
+"feO-Ay-v9B.text" = "Location";
+
+/* Class = "UILabel"; text = "Convert Fahrenheit to Celsius"; ObjectID = "ief-kV-h4S"; */
+"ief-kV-h4S.text" = "Convert Fahrenheit to Celsius";
+
+/* Class = "UIButton"; normalTitle = "Change language"; ObjectID = "maq-jN-DZR"; */
+"maq-jN-DZR.normalTitle" = "Cambiar idioma";
+
+/* Class = "UITextField"; placeholder = "Apellido"; ObjectID = "pBh-nu-B1y"; */
+"pBh-nu-B1y.placeholder" = "Apellido";
+
+/* Class = "UILabel"; text = "No hay registros de personas"; ObjectID = "wHS-kP-IN4"; */
+"wHS-kP-IN4.text" = "No hay registros de personas";

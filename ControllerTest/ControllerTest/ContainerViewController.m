@@ -16,7 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"Is not null? %d", (self.testItem!=nil));
+    if(self.testItem == nil) {
+        NSString* defaultSegue = [self getDefaultSegue];
+        if(defaultSegue == nil) {
+            defaultSegue = @"embedFifth";
+        }
+        [self setTestItem:[TestItem initTestItem:@1 withName:@"First test" andSegue:defaultSegue]];
+    }
     
+    [self setDefaultSegue:_testItem.segueName];
     NSLog(@"%@", self.testItem.getTestName);
     // Do any additional setup after loading the view.
     
@@ -38,6 +47,7 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Prepare for Segue");
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     [self addChildViewController:segue.destinationViewController];
@@ -46,6 +56,17 @@
     destView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:destView];
     //[segue.destinationViewController didMoveToParentViewController:self];
+}
+
+- (void) setDefaultSegue: (NSString*) lastSegue {
+    NSUserDefaults* sud = [NSUserDefaults standardUserDefaults];
+    [sud setObject:lastSegue forKey:@"lastSegue"];
+    [sud synchronize];
+}
+
+- (NSString*) getDefaultSegue {
+    NSUserDefaults* sud = [NSUserDefaults standardUserDefaults];
+    return [sud stringForKey:@"lastSegue"];
 }
 
 @end

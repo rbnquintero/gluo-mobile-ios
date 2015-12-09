@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		9930F5181BA0927B004D355C /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9930F5171BA0927B004D355C /* DBManager.m */; };
 		99434E441BA1EDAF00F98AD5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99434E431BA1EDAF00F98AD5 /* CoreData.framework */; };
-		996BBCC31BB2FF1A00FB2403 /* CoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCC11BB2FF1A00FB2403 /* CoreDataTest.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
-		996BBCC61BB302A500FB2403 /* CoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCC51BB302A500FB2403 /* CoreDataService.m */; settings = {ASSET_TAGS = (); }; };
-		996BBCC91BB31CD400FB2403 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCC81BB31CD400FB2403 /* CoreDataViewController.m */; settings = {ASSET_TAGS = (); }; };
-		996BBCCC1BB31E1C00FB2403 /* AAAEmployeeMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCCB1BB31E1C00FB2403 /* AAAEmployeeMO.m */; settings = {ASSET_TAGS = (); }; };
+		995D3C7A1C0D16930064E1CE /* LocalizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D3C791C0D16930064E1CE /* LocalizationViewController.m */; };
+		995D3C7D1C0D17EB0064E1CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 995D3C7F1C0D17EB0064E1CE /* Localizable.strings */; };
+		996BBCC31BB2FF1A00FB2403 /* CoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCC11BB2FF1A00FB2403 /* CoreDataTest.xcdatamodeld */; };
+		996BBCC61BB302A500FB2403 /* CoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCC51BB302A500FB2403 /* CoreDataService.m */; };
+		996BBCC91BB31CD400FB2403 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCC81BB31CD400FB2403 /* CoreDataViewController.m */; };
+		996BBCCC1BB31E1C00FB2403 /* AAAEmployeeMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBCCB1BB31E1C00FB2403 /* AAAEmployeeMO.m */; };
 		997000191B9E392500F9B01B /* TemperatureService.m in Sources */ = {isa = PBXBuildFile; fileRef = 997000181B9E392500F9B01B /* TemperatureService.m */; };
 		997000201B9E3AFF00F9B01B /* TempConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970001D1B9E3AFF00F9B01B /* TempConvert.m */; };
 		997000211B9E3AFF00F9B01B /* TempConvertProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9970001F1B9E3AFF00F9B01B /* TempConvertProxy.m */; };
@@ -55,9 +57,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		992857541C18879200E08569 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9930F5161BA0927B004D355C /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		9930F5171BA0927B004D355C /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		99434E431BA1EDAF00F98AD5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		995D3C741C0D12080064E1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		995D3C751C0D12080064E1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		995D3C761C0D13A00064E1CE /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
+		995D3C771C0D13A00064E1CE /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		995D3C781C0D16930064E1CE /* LocalizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationViewController.h; sourceTree = "<group>"; };
+		995D3C791C0D16930064E1CE /* LocalizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationViewController.m; sourceTree = "<group>"; };
+		995D3C801C0D18420064E1CE /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		996BBCC21BB2FF1A00FB2403 /* CoreDataTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTest.xcdatamodel; sourceTree = "<group>"; };
 		996BBCC41BB302A500FB2403 /* CoreDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataService.h; sourceTree = "<group>"; };
 		996BBCC51BB302A500FB2403 /* CoreDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataService.m; sourceTree = "<group>"; };
@@ -96,9 +106,7 @@
 		99A01D2D1B867E1E00E26286 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99A01D2F1B867E1E00E26286 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99A01D301B867E1E00E26286 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		99A01D361B867E1E00E26286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99A01D381B867E1E00E26286 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		99A01D3B1B867E1E00E26286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		99A01D411B867E1E00E26286 /* ControllerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControllerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A01D461B867E1E00E26286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99A01D471B867E1E00E26286 /* ControllerTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllerTestTests.m; sourceTree = "<group>"; };
@@ -269,6 +277,7 @@
 			children = (
 				99A01D2C1B867E1E00E26286 /* Info.plist */,
 				99A01D2D1B867E1E00E26286 /* main.m */,
+				995D3C7F1C0D17EB0064E1CE /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -312,6 +321,8 @@
 				997000D81B9F487500F9B01B /* RESTServiceViewController.m */,
 				996BBCC71BB31CD400FB2403 /* CoreDataViewController.h */,
 				996BBCC81BB31CD400FB2403 /* CoreDataViewController.m */,
+				995D3C781C0D16930064E1CE /* LocalizationViewController.h */,
+				995D3C791C0D16930064E1CE /* LocalizationViewController.m */,
 			);
 			name = TestControllers;
 			sourceTree = "<group>";
@@ -379,6 +390,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-MX",
 			);
 			mainGroup = 99A01D1F1B867E1E00E26286;
 			productRefGroup = 99A01D291B867E1E00E26286 /* Products */;
@@ -397,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99A01D371B867E1E00E26286 /* Main.storyboard in Resources */,
+				995D3C7D1C0D17EB0064E1CE /* Localizable.strings in Resources */,
 				99A01D3C1B867E1E00E26286 /* LaunchScreen.xib in Resources */,
 				99A01D391B867E1E00E26286 /* Images.xcassets in Resources */,
 			);
@@ -416,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				995D3C7A1C0D16930064E1CE /* LocalizationViewController.m in Sources */,
 				997000D91B9F487500F9B01B /* RESTServiceViewController.m in Sources */,
 				9970FFF61B9DF04200F9B01B /* LocalTime_Enums.m in Sources */,
 				99DB9AE11B8777B500054FB2 /* DetailViewController.m in Sources */,
@@ -464,10 +478,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		995D3C7F1C0D17EB0064E1CE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				995D3C801C0D18420064E1CE /* es-MX */,
+				992857541C18879200E08569 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		99A01D351B867E1E00E26286 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				99A01D361B867E1E00E26286 /* Base */,
+				995D3C741C0D12080064E1CE /* Base */,
+				995D3C761C0D13A00064E1CE /* es-MX */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -475,7 +499,8 @@
 		99A01D3A1B867E1E00E26286 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				99A01D3B1B867E1E00E26286 /* Base */,
+				995D3C751C0D12080064E1CE /* Base */,
+				995D3C771C0D13A00064E1CE /* es-MX */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

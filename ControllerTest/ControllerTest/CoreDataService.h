@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "AAAEmployeeMO.h"
 @protocol CoreDataServiceDelegate <NSObject>
 @required
 - (void) showPersonas: (NSArray *) personas;
@@ -22,5 +23,7 @@
 - (void) saveNew: (NSString *) firstName :(NSString *) lastName;
 
 - (void) fetchAllPersons;
+
+- (NSArray*) deleteOnePerson:(AAAEmployeeMO*) employee;
 
 @end

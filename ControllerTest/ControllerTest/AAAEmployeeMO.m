@@ -13,5 +13,10 @@
 //  The @dynamic tag informs the compiler that the variable will be resolved at runtime.
 @dynamic firstName;
 @dynamic lastName;
+@dynamic startDate;
+
+- (NSString*) getName {
+    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
+}
 
 @end

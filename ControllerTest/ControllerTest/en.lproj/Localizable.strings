@@ -1,0 +1,11 @@
+/* 
+  Localization.strings
+  ControllerTest
+
+  Created by Ruben Quintero on 11/30/15.
+  Copyright © 2015 Ruben Quintero. All rights reserved.
+*/
+
+"tests.localization.button" = "Change language";
+"tests.localization.description" = "  This is a localization test. Using the button bellow, you can change the language to be used in this screen.";
+"tests.localization.title" = "Localization Test";

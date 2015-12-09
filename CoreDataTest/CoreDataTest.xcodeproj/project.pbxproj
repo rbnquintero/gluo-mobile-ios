@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		995D3C841C0E06030064E1CE /* AAAEmployeeMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D3C831C0E06030064E1CE /* AAAEmployeeMO.m */; };
 		996BBC8C1BB2FA8F00FB2403 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBC8B1BB2FA8F00FB2403 /* main.m */; };
 		996BBC8F1BB2FA8F00FB2403 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBC8E1BB2FA8F00FB2403 /* AppDelegate.m */; };
 		996BBC921BB2FA8F00FB2403 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BBC911BB2FA8F00FB2403 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		995D3C821C0E06030064E1CE /* AAAEmployeeMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAAEmployeeMO.h; sourceTree = "<group>"; };
+		995D3C831C0E06030064E1CE /* AAAEmployeeMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAAEmployeeMO.m; sourceTree = "<group>"; };
 		996BBC871BB2FA8F00FB2403 /* CoreDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		996BBC8B1BB2FA8F00FB2403 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		996BBC8D1BB2FA8F00FB2403 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		995D3C851C0E06090064E1CE /* MO */ = {
+			isa = PBXGroup;
+			children = (
+				995D3C821C0E06030064E1CE /* AAAEmployeeMO.h */,
+				995D3C831C0E06030064E1CE /* AAAEmployeeMO.m */,
+			);
+			name = MO;
+			sourceTree = "<group>";
+		};
 		996BBC7E1BB2FA8F00FB2403 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +115,7 @@
 		996BBC891BB2FA8F00FB2403 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				995D3C851C0E06090064E1CE /* MO */,
 				996BBC8D1BB2FA8F00FB2403 /* AppDelegate.h */,
 				996BBC8E1BB2FA8F00FB2403 /* AppDelegate.m */,
 				996BBC901BB2FA8F00FB2403 /* ViewController.h */,
@@ -276,6 +289,7 @@
 				996BBC981BB2FA8F00FB2403 /* CoreDataTest.xcdatamodeld in Sources */,
 				996BBC921BB2FA8F00FB2403 /* ViewController.m in Sources */,
 				996BBC8F1BB2FA8F00FB2403 /* AppDelegate.m in Sources */,
+				995D3C841C0E06030064E1CE /* AAAEmployeeMO.m in Sources */,
 				996BBC8C1BB2FA8F00FB2403 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +516,7 @@
 				996BBCB91BB2FA8F00FB2403 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		996BBCBA1BB2FA8F00FB2403 /* Build configuration list for PBXNativeTarget "CoreDataTestTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +525,7 @@
 				996BBCBC1BB2FA8F00FB2403 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		996BBCBD1BB2FA8F00FB2403 /* Build configuration list for PBXNativeTarget "CoreDataTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +534,7 @@
 				996BBCBF1BB2FA8F00FB2403 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

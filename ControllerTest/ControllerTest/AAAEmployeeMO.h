@@ -14,4 +14,6 @@
 @property (nonatomic, strong) NSString *lastName;
 @property (nonatomic, strong) NSDate *startDate;
 
+- (NSString*) getName;
+
 @end
