@@ -1,22 +1,18 @@
 //
-//  TableViewController.m
+//  MasterViewController.m
 //  ControllerTest
 //
-//  Created by Ruben Quintero on 8/20/15.
-//  Copyright (c) 2015 Ruben Quintero. All rights reserved.
+//  Created by Ruben Quintero on 12/9/15.
+//  Copyright © 2015 Ruben Quintero. All rights reserved.
 //
 
-#import "TableViewController.h"
-#import "TestItem.h"
-#import "DetailViewController.h"
+#import "MasterViewController.h"
 
-@interface TableViewController ()
-
-@property NSMutableArray *testList;
+@interface MasterViewController ()
 
 @end
 
-@implementation TableViewController
+@implementation MasterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,17 +22,6 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    [self createTestList];
-}
-
-- (void)createTestList {
-    self.testList = [[NSMutableArray alloc] init];
-    [self.testList addObject:[TestItem initTestItem:@1 withName:@"Location" andSegue:@"embedFirst"]];
-    [self.testList addObject:[TestItem initTestItem:@2 withName:@"SOAP Service" andSegue:@"embedSecond"]];
-    [self.testList addObject:[TestItem initTestItem:@3 withName:@"REST Service" andSegue:@"embedThird"]];
-    [self.testList addObject:[TestItem initTestItem:@4 withName:@"Core Data Service" andSegue:@"embedFourth"]];
-    [self.testList addObject:[TestItem initTestItem:@5 withName:@"Localization" andSegue:@"embedFifth"]];
-    [self.testList addObject:[TestItem initTestItem:@6 withName:@"Google Maps API" andSegue:@"embedSixth"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,30 +32,24 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections on list
-    return 1;
+#warning Incomplete implementation, return the number of sections
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
-    return [self.testList count];
+#warning Incomplete implementation, return the number of rows
+    return 0;
 }
 
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"testIdentifier" forIndexPath:indexPath];
-    TestItem* test = [self.testList objectAtIndex:indexPath.row];
-    cell.textLabel.text = [test getTestName];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
     return cell;
 }
-
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    TestItem *test = self.testList[indexPath.row];
-    NSLog(@"%@", test.getTestName);
-    UINavigationController *navcontroller = [segue destinationViewController];
-    DetailViewController *controller = (DetailViewController*) [navcontroller topViewController];
-    [controller setTestItem:test];
-}
+*/
 
 /*
 // Override to support conditional editing of the table view.
